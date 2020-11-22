@@ -1,6 +1,3 @@
-name,price
+datetime,name,price
 
-Hello,300
-Slurpy,400
-Hello,32.3
-He,323
+2020-11-22 21:08:22.927566,Hello,3
