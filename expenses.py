@@ -36,8 +36,6 @@ def expenses_summary():
         val[1] += data['name'] + "\n"
         val[2] += data['price'] + "\n"
 
-    print(dic)
-
     table = texttable.Texttable()
     table.add_rows(
                 [
