@@ -62,7 +62,7 @@ def check_CSV():
     if not os.path.exists('data/items.csv'):
         #create a cvs for items
         save_file = open('data/items.csv','a')
-        save_file.write('datetime' + ',' + 'name' + ',' + 'price' + '\n')
+        save_file.write('datetime' + ',' + 'name' + ',' + 'price' )
         save_file.close()
 
 
