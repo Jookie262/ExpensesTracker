@@ -12,7 +12,7 @@ def save_items():
     # Ask user for an item that you have spent
     input_name = input("Item that I spent money today: ")
     # Ask user for the price of the item
-    input_price = input("How much did I spent? ")
+    input_price = input("How much did I spent? ₱")
     # Returns name and price of the item
     return input_name, input_price
 
@@ -20,6 +20,32 @@ def save_items():
 def add_spent(name, ammount): 
     with open("data/items.csv", "a") as save_file:
         save_file.write('\n'+ name + ',' + ammount)
+
+# This method prints the CSV data in table view
+def expenses_summary():
+    # using texttable pip
+    val = ['','']
+    dic = csv.DictReader(open("data/items.csv"))
+    for data in dic:
+        val[0] += data['name'] + "\n"
+        val[1] += data['price'] + "\n"
+
+    table = texttable.Texttable()
+    table.add_rows(
+                [
+                ['Name', 'Price'],
+                [val[0], val[1]],
+                ['Total Expenses', total_expenses()]
+                ])
+    return(table.draw())
+
+# This method gets and calculate for the total expenses found in items.csv
+def total_expenses():
+    total_price = 0;
+    input_file = csv.DictReader(open("data/items.csv"))
+    for data in input_file:
+        total_price += float(data['price'])
+    return str(total_price)
 
 # This method is used to check if the item.csv is in the file
 # if the csv file is not exist this method will create it
@@ -30,12 +56,6 @@ def check_CSV():
         save_file = open('data/items.csv','a')
         save_file.write('name' + ',' + 'price' + '\n')
         save_file.close()
-    
-    if not os.path.exists('data/total.csv'):
-        #create a csv total savings
-        total = open('data/total.csv', 'a')
-        total.write('Total Expenses')
-        total.close()
 
 
 # This is the main method of the proram that ask users for options
