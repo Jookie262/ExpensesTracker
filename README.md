@@ -34,8 +34,8 @@ pip install pyside2
 Here are some links and articles that help in creating this project
 
 * [Python - Import CSV File To Tkinter Table](https://www.sourcecodester.com/tutorials/python/12494/python-import-csv-file-tkinter-table.html)
-*[Reading and Writing CSV Files in Python](https://realpython.com/python-csv/)
-*[How I Used Python to Control Spending/Saving in a Simple Way
+* [Reading and Writing CSV Files in Python](https://realpython.com/python-csv/)
+* [How I Used Python to Control Spending/Saving in a Simple Way
 ](https://medium.com/swlh/how-i-used-python-to-control-spending-saving-in-a-simple-way-30e8b3df4c0a)
 
 ## 🙌 Contribution
