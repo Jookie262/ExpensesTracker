@@ -16,8 +16,16 @@ def save_items():
     input_name = input("Item that I spent money today: ")
     # Ask user for the price of the item
     input_price = input("How much did I spent? ₱")
-    # Returns name and price of the item
-    return auto_datetime, input_name, input_price
+
+    # implementing try and execept to avoid errors in the price
+    try:
+        #converting input_price to numbers
+        num_price = float(input_price)
+        # Returns name and price of the item
+        return auto_datetime, input_name, str(num_price)
+    except:
+        print("Try Again")
+        save_items()
 
 # This method is used to store data in the csv file
 def add_spent(date, name, ammount): 
