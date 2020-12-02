@@ -4,7 +4,7 @@ Simple 🐍 Python Program that tracks your own expenses. Purpose of this progra
 ## 🔥 Simple Features
 Here are some simple features that this program can offer 
 * Can able to create save an expenses
-* The Data is saved in Comma Seperated Values(CSV) format
+* The Data is saved in Comma Seperated Values (CSV) format
 * Can view past records of expenses with a date, name, and price
 
 | Date              | Item Name     | Item Price|
@@ -19,7 +19,7 @@ Install this packages in you computer using cmd to run this program
 ```
 pip install textable
 ```
-**Textable** is use to generate a text and pdf files from dataframes. This is needed to run the program inside the terminal only.
+**Textable** is use to generate a text and pdf files from dataframes. This is needed to run the program inside the terminal.
 
 ```
 pip install pyqt
@@ -28,7 +28,7 @@ pip install pyqt
 ```
 pip install pyside2
 ```
-**PySide** is the Python Qt bindings project. This must be needed to be install to run a GUI of this program
+**PySide** is the Python Qt bindings project. This must be needed to install in order to run a GUI of this program
 
 ## ✨ Resources
 Here are some links and articles that help in creating this project
@@ -37,6 +37,8 @@ Here are some links and articles that help in creating this project
 * [Reading and Writing CSV Files in Python](https://realpython.com/python-csv/)
 * [How I Used Python to Control Spending/Saving in a Simple Way
 ](https://medium.com/swlh/how-i-used-python-to-control-spending-saving-in-a-simple-way-30e8b3df4c0a)
+* [Python - Splash Screen - Modern Gui [Qt Designer, PySide2/PyQt5] (Time Lapse Video)
+](https://www.youtube.com/watch?v=Ap865V3sAdw&t=688s)
 
 ## 🙌 Contribution
 If you want to contribute to this project and make it better, then fork this repo and your very own pull request is welcome. If you find some problem to this project then just put it in the issue page. Thank you 😊
